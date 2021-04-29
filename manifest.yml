@@ -1,0 +1,9 @@
+applications:
+- name: walk-credhub
+  memory: 64M
+  disk_quota: 256M
+  buildpacks:
+  - python_buildpack
+  services:
+    - test-credhub
+    - test-credhub-2
